@@ -1,0 +1,68 @@
+{
+  "format": "custom",
+  "id": "settings",
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "site_title": {
+        "type": "Text",
+        "config": {
+          "label": "Site title",
+          "placeholder": "Developer Porfolio"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Lorem ipsum"
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "OG Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "navigation": {
+        "type": "Group",
+        "config": {
+          "label": "Navigation",
+          "repeat": true,
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "cta_button": {
+              "type": "Boolean",
+              "config": {
+                "label": "CTA. Button",
+                "placeholder_false": "false",
+                "placeholder_true": "true",
+                "default_value": false
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Change me",
+                "allowTargetBlank": true,
+                "select": null,
+                "allowText": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
