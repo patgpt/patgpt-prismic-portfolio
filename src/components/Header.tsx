@@ -1,15 +1,12 @@
-// Header.tsx
-
-import LogoTemp from "@/components/logo";
 import { createClient } from "@/prismicio";
-import Navbar from "./Navbar";
+import Navbar from "@/components/Navbar";
 
 export default async function Header() {
   const client = createClient();
-  const response = await client.getSingle("settings");
+  const settings = await client.getSingle("settings");
   return (
-    <div>
-      <Navbar />
-    </div>
+    <header>
+      <Navbar settings={settings} />
+    </header>
   );
 }

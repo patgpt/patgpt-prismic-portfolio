@@ -13,9 +13,9 @@ export default async function Footer() {
       </div>
       <nav>
         <ul>
-          {response.data.navigation.map((navItem) => (
-            <li key={navItem.link.text}>
-              <PrismicNextLink key={navItem.label} field={navItem.link}>
+          {response.data.navigation.map((navItem, index) => (
+            <li key={index}>
+              <PrismicNextLink key={index} field={navItem.link}>
                 {navItem.label}
               </PrismicNextLink>
             </li>
