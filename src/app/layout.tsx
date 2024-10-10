@@ -5,11 +5,13 @@ import clsx from "clsx";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import "./globals.css";
+
 const FontSans = DM_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export default function RootLayout({
   children,
@@ -18,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={clsx(FontSans.className)}>
-      
-      <body className="bg-[#070815] text-wwhite">
-        <Header/>
+      <body className="bg-black text-white">
+        <Header />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
