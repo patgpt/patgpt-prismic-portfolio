@@ -2,11 +2,8 @@
 
 import { Content } from "@prismicio/client";
 import { PrismicNextLink } from "@prismicio/next";
-import LogoTemp from "./logo";
-import ButtonLink from "./ButtonLink";
-
-
-
+import LogoTemp from "@/components/logo";
+import ButtonLink from "@/components/ButtonLink";
 
 type NavbarPropa = {
   settings: Content.SettingsDocument
