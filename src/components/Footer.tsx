@@ -1,4 +1,4 @@
-import LogoTemp from "@/components/logo";
+import LogoTemp from "@/components/Logo";
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
 
